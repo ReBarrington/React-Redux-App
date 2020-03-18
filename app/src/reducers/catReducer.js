@@ -13,5 +13,9 @@ export const catReducer = (state = initialState, action) => {
                 ...state,
                 isFetchingData: true
             }
+        default: 
+            return {
+                ...state
+            }
     }
 }
