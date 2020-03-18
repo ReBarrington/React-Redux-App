@@ -1,7 +1,7 @@
 import React from 'react';
-import { connect } from 'react-redux';
-
 import { getData } from '../actions';
+import { connect } from 'react-redux';
+import './component.css';
 
 const CatForm = props => {
 
@@ -14,7 +14,7 @@ const CatForm = props => {
     return (
         <>
             {props.isFetchingData ? (
-                <div>*** We are calling the kitties ***</div>
+                <div className='load'>*** We are calling the kitties ***</div>
             ) : (
                     <button onClick={handleGetData}>Get Kitties</button>
                     // activate this button to 

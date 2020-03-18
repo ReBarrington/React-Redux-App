@@ -4,6 +4,7 @@ import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import thunk from "redux-thunk";
 import { catReducer as reducer } from './reducers/catReducer';
+import CatList from './components/CatList';
 import './App.css';
 
 const store = createStore(reducer, applyMiddleware(thunk));
@@ -13,8 +14,9 @@ function App() {
     <Provider store={store}>
       {/* this will all have access to redux store: */}
       <div className="App">
-          <h1>Got Milk?</h1>
+          <h1>Want Kitties?</h1>
           <CatForm />
+          <CatList />
       </div>
     </Provider>
   );

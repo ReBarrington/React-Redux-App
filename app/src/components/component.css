@@ -1,0 +1,23 @@
+h2 {
+    color: hotpink;
+}
+
+.catphoto {
+    width: 30%;
+    border: 50px hotpink solid;
+  }
+
+.load {
+    color: hotpink;
+    font-size: 200%;
+}
+
+h1 {
+    color: hotpink;
+    font-size: 400%;
+}
+
+button {
+    background-color: hotpink;
+    font-size: 300%;
+}
