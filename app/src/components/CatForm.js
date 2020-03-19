@@ -14,20 +14,21 @@ const CatForm = props => {
     return (
         <>
             {props.isFetchingData ? (
-                <div className='load'>*** We are calling the kitties ***</div>
+                <div className='load'>*** calling the kitties ***</div>
             ) : (
                     <button onClick={handleGetData}>Get Kitties</button>
-                    // activate this button to 
+                    // this button -> handleGetData -> getData (in actions file) -> axios.
             )}
         </>
     )
 };
 
+// getting state using connect (state is in store)
 const mapStateToProps = state => {
     return {
         isFetchingData: state.isFetchingData
     }
 }
-
+// getData is from action file and is placed in the position of mapDispatchToProps
 export default connect(mapStateToProps, {getData}) (CatForm);
 

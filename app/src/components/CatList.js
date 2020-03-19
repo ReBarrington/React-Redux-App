@@ -3,7 +3,9 @@ import { connect } from 'react-redux';
 import './component.css'
 
 const CatList = props => {
-    console.log(props, ' is props in CatList')
+
+    console.log(props, ' is props in CatList') // object with 1 array item called cats which has a url for photo...? 
+
     return (
         <> 
             {props.cats.map(cat => (
